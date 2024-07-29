@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotê D'Azur</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="imagex/png" href="IMAGENS/Logo-Côter-D’Azur-_1_.ico">
-    <script src="slider.js" defer></script>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a visualização para dispositivos móveis -->
+    <title>Cotê D'Azur</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS principal -->
+    <link rel="stylesheet" href="index.css"> <!-- Link para um segundo arquivo CSS (específico da página) -->
+    <link rel="shortcut icon" type="imagex/png" href="IMAGENS/Logo-Côter-D’Azur.ico"> <!-- Favicon da página -->
+    <script src="slider.js" defer></script> <!-- Script JavaScript para o slider, carregado de forma assíncrona -->
 </head>
 <body>
-    <header>
+    <header> <!-- Cabeçalho da página -->
         <div class="logo">
-            <h1>Cotê D'Azur</h1>
+            <h1>Cotê D'Azur</h1> <!-- Título da empresa/logo -->
         </div>
-        <nav>
+        <nav> <!-- Navegação principal -->
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="fragrance.html">FRAGRANCE</a></li>
-                <li><a href="skin.html">SKIN</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-                <li><a href="sac.html">SAC</a></li>
+                <li><a href="index.html">HOME</a></li> <!-- Link para a página inicial -->
+                <li><a href="fragrance.html">FRAGANCE</a></li> <!-- Link para a página de fragrâncias -->
+                <li><a href="skin.html">SKIN</a></li> <!-- Link para a página de cuidados com a pele -->
+                <li><a href="sobre.html">SOBRE</a></li> <!-- Link para a página "Sobre" -->
+                <li><a href="sac.html">SAC</a></li> <!-- Link para a página de atendimento ao cliente -->
             </ul>
         </nav>
     </header>
-    <section class="slider">
-        <div class="slider-content">
-            <input type="radio" name ="btn-radio" id="radio1">
-            <input type="radio" name ="btn-radio" id="radio2">
 
-            <div class="slide-box primeiro">
-                <img class="HOME1" src="IMAGENS/HOME 1.jpg">
-                <img class="HOME2" src="IMAGENS/">
+    <section class="slider"> <!-- Seção do slider/carrossel -->
+        <div class="slider-content"> <!-- Conteúdo do slider -->
+            <input type="radio" name="btn-radio" id="radio2"> <!-- Botão de rádio para o segundo slide -->
+            <input type="radio" name="btn-radio" id="radio3"> <!-- Botão de rádio para o terceiro slide -->
+
+            <div class="slide-box segundo"> <!-- Segundo slide -->
+                <img src="IMAGENS/HOME 1.jpg" width="1366" height="768"> <!-- Imagem do segundo slide -->
             </div>
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-            </div>
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
+            <div class="slide-box terceiro"> <!-- Terceiro slide -->
+                <img src="IMAGENS/HOME 2.jpg" width="1366" height="768"> <!-- Imagem do terceiro slide -->
             </div>
 
+            <div class="nav-auto"> <!-- Navegação automática (botões) -->
+                <div class="auto-bnt2"></div> <!-- Botão automático para o segundo slide -->
+                <div class="auto-bnt3"></div> <!-- Botão automático para o terceiro slide -->
+            </div>
+
+            <div class="nav-manual"> <!-- Navegação manual (botões) -->
+                <label for="radio2" class="manual-btn"></label> <!-- Botão manual para o segundo slide -->
+                <label for="radio3" class="manual-btn"></label> <!-- Botão manual para o terceiro slide -->
+            </div>
         </div>
     </section>
-    <br><br><br><br><br>
-    <footer>
-        <h4>&copy; 2024 Cotê D'Azur. Todos os direitos reservados.</h4>
+    <br><br><br><br><br> <!-- Espaçamento extra -->
+    <footer> <!-- Rodapé da página -->
+        <h4>&copy; 2024 Cotê D'Azur. Todos os direitos reservados.</h4> <!-- Aviso de direitos autorais -->
+        <a href="https://www.instagram.com/coterdazur/"><img src="IMAGENS/insta (1).png"></a> <!-- Link para o Instagram -->
+        <a href="https://www.youtube.com/@coterdazur"><img src="IMAGENS/youtube (2).png"></a> <!-- Link para o YouTube -->
+        <a href="https://www.natura.com.br/"><img src="IMAGENS/natura.png"></a> <!-- Link para o site da Natura -->
     </footer>
 </body>
 </html>

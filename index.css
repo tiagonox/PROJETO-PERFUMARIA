@@ -1,0 +1,85 @@
+/* Estiliza a seção do slider */
+section.slider {
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
+    width: 100%; /* Largura total da seção */
+    height: auto; /* Altura automática, ajustada ao conteúdo */
+    padding: 0; /* Sem padding */
+    overflow: hidden; /* Oculta conteúdo que ultrapassa os limites da seção */
+}
+
+/* Estiliza o conteúdo do slider */
+.slider-content {
+    display: flex; /* Exibe os itens em um layout flexível em linha */
+    width: 400%; /* Largura total do conteúdo (4 slides de 100% cada) */
+    height: auto; /* Altura automática, ajustada ao conteúdo */
+}
+
+/* Estiliza os inputs dentro do slider-content */
+.slider-content input {
+    display: none; /* Oculta os inputs */
+    position: fixed; /* Posiciona os inputs de forma fixa */
+}
+
+/* Estiliza cada slide individual */
+.slide-box {
+    width: 25%; /* Largura de cada slide (25% do conteúdo total) */
+    height: auto; /* Altura automática, ajustada ao conteúdo */
+    position: relative; /* Posição relativa para permitir ajustes internos */
+    text-align: center; /* Alinha o texto ao centro */
+    transition: 2s; /* Transição suave de 2 segundos */
+}
+
+/* Estiliza as imagens dentro de cada slide */
+.slide-box img {
+    width: 100%; /* Largura total da imagem, ajustada ao slide */
+    height: auto; /* Altura automática, ajustada ao conteúdo */
+}
+
+/* Estiliza a navegação manual */
+.nav-manual {
+    position: absolute; /* Posicionamento absoluto */
+    width: 100%; /* Largura total da navegação manual */
+    bottom: 30px; /* Posiciona a navegação a 30px do fundo */
+    margin-top: 1%; /* Margem superior de 1% */
+    display: flex; /* Exibe os itens em um layout flexível em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estiliza os botões manuais */
+.nav-manual .manual-btn { 
+    border: 2px solid #75d3ff; /* Borda azul clara */
+    padding: 15px; /* Espaçamento interno de 15px */
+    border-radius: 50%; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+    transition: 0.2s; /* Transição suave de 0.2 segundos */
+}
+
+/* Adiciona margem à direita, exceto no último botão */
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 10px; /* Margem direita de 10px */
+} 
+
+/* Estiliza o botão ao passar o mouse */
+.nav-manual .manual-btn:hover {
+    background-color: rgb(154, 237, 248); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estiliza o botão automático quando o segundo rádio está selecionado */
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: #fffdfd; /* Cor de fundo branca */
+}
+
+/* Estiliza o botão automático quando o terceiro rádio está selecionado */
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #000000; /* Cor de fundo preta */
+}
+
+/* Move o segundo slide quando o segundo rádio está selecionado */
+#radio2:checked ~ .segundo {
+    margin-left: -25%; /* Move o slide 25% para a esquerda */
+}
+
+/* Move o terceiro slide quando o terceiro rádio está selecionado */
+#radio3:checked ~ .terceiro {
+    margin-left: -0%; /* Move o slide 0% (fica no mesmo lugar) */
+}
